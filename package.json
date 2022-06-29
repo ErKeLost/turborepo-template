@@ -1,0 +1,55 @@
+{
+  "name": "turborepo-template",
+  "version": "0.0.0-alpha0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "build:docs": "pnpm build --filter docs",
+    "build:cli": "pnpm build --filter vite-cli",
+    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prettier": "prettier --write .",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
+    "eslint": "eslint . --ext .ts,.vue,.js,.tsx",
+    "prepare": "husky install",
+    "commit": "git add . && cz",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.23.0",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "commitizen": "^4.2.4",
+    "commitlint": "^17.0.3",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.6.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "latest",
+    "turbo": "latest",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.2.1",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
