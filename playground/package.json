@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@relaxed/utils": "workspace:*",
     "vue": "^3.2.37"
   },
   "devDependencies": {

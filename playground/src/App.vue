@@ -2,6 +2,11 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
+import { Accumulation, Multiplication } from '@relaxed/utils'
+const res = Accumulation(1, 2, 3, 4, 5)
+const result = Multiplication(1, 2, 3, 4, 5)
+console.log(res)
+console.log(result)
 </script>
 
 <template>
