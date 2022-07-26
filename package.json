@@ -22,7 +22,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prettier": "prettier --write .",
-    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
+    "prettier-watch": "onchange '**/*.ts' -- prettier --write {{changed}}",
     "eslint": "eslint . --ext .ts,.vue,.js,.tsx",
     "prepare": "husky install",
     "commit": "git add . && cz",
