@@ -1,14 +1,16 @@
 {
+  "extends": "@relaxed/tsconfig/base.json",
   "include": ["*.d.ts", "src/**/*.ts", "src/*.d.ts"],
-  "compilerOptions": {
-    "target": "es2017",
-    "module": "esnext",
-    "lib": ["esnext", "DOM"],
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "resolveJsonModule": true
-    // "types": ["vite/client"]
-  }
+  "exclude": ["dist", "build", "node_modules"]
+  // "compilerOptions": {
+  //   "target": "es2017",
+  //   "module": "esnext",
+  //   "lib": ["esnext", "DOM"],
+  //   "moduleResolution": "node",
+  //   "esModuleInterop": true,
+  //   "strict": true,
+  //   "strictNullChecks": true,
+  //   "resolveJsonModule": true
+  //   // "types": ["vite/client"]
+  // }
 }
