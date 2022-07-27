@@ -9,6 +9,6 @@
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
-    "types": ["vite/client"]
+    // "types": ["vite/client"]
   }
 }
