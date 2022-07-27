@@ -3,9 +3,13 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import { Accumulation, Multiplication } from '@relaxed/utils'
+import { useComputed } from '@relaxed/hook'
 const res = Accumulation(1, 2, 3, 4, 5)
 const result = Multiplication(1, 2, 3, 4, 5)
 console.log(res)
+const w = useComputed(6666)
+console.log(w)
+
 console.log(result)
 </script>
 

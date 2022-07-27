@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@relaxed/utils": "workspace:*",
+    "@relaxed/hook": "workspace:*",
     "vue": "^3.2.37"
   },
   "devDependencies": {
