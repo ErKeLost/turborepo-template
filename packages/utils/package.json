@@ -2,12 +2,16 @@
   "name": "@relaxed/utils",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --outDir dist"
+    "build": "tsup",
+    "build:fix": "esno scripts/postbuild.ts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fast-glob": "^3.2.11"
+  }
 }

@@ -1,2 +1,4 @@
-declare const Accumulation: any;
-declare const Multiplication: any;
+declare function Accumulation(...value: any[]): any;
+declare function Multiplication(...value: any[]): any;
+
+export { Accumulation, Multiplication };
