@@ -1,5 +1,7 @@
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 export function useComputed(value: any) {
   const w = ref(value)
-  return w.value + 111
+  return computed(() => {
+    return value.value + 999
+  })
 }
