@@ -23,7 +23,7 @@ console.log(result)
     {{ w }}
     {{ e }}
     {{ r }}
-    <input v-model="a" type="text">
+    <input v-model="a" type="text" />
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
