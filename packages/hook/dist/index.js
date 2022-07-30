@@ -26,7 +26,9 @@ module.exports = __toCommonJS(src_exports);
 var import_vue = require("vue");
 function useComputed(value) {
   const w = (0, import_vue.ref)(value);
-  return w.value + 111;
+  return (0, import_vue.computed)(() => {
+    return value.value + 999;
+  });
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
