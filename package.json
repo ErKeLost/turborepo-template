@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "postplop": "pnpm i",
-    "build": "turbo run build",
+    "build": "turbo run build --color",
     "build:components": "pnpm build --filter components",
     "build:utils": "pnpm build --filter utils",
     "build:directives": "pnpm build --filter directives",
