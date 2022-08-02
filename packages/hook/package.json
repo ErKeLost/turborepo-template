@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
     "build:fix": "esno scripts/postbuild.ts"
   },
   "keywords": [],
@@ -16,6 +17,9 @@
   },
   "devDependencies": {
     "@relaxed/tsconfig": "workspace:*",
+    "eslint": "^8.18.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint-plugin-vue": "^9.3.0",
     "vue": "^3.2.37"
   }
 }
