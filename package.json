@@ -2,10 +2,6 @@
   "name": "turborepo-template",
   "version": "0.0.0-alpha0.1",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "postplop": "pnpm i",
     "build": "turbo run build --color",
