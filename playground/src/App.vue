@@ -4,14 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import { Accumulation, Multiplication } from '@relaxed/utils'
 import useBoolean from '@relaxed/hook'
-const {
-  bool,
-  setBool,
-  setTrue,
-  setFalse,
-  toggle
-} = useBoolean(false)
-
+const { bool, setBool, setTrue, setFalse, toggle } = useBoolean(false)
 </script>
 
 <template>
@@ -19,21 +12,18 @@ const {
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
-    <n-tag type="warning">
-      {{ bool }}
-    </n-tag>
-    <n-button type="tertiary" @click="setFalse">
-      false
-    </n-button>
-    <n-button type="primary" @click="setTrue">
-      true
-    </n-button>
-    <n-button type="info" @click="toggle">
-      toogle
-    </n-button>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <div style="margin: 10px 0">
+      <n-tag type="warning">
+        {{ bool }}
+      </n-tag>
+    </div>
+    <n-button type="tertiary" @click="setFalse"> false </n-button>
+    <n-button type="primary" @click="setTrue"> true </n-button>
+    <n-button type="info" @click="toggle"> toogle </n-button>
+
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
