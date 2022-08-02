@@ -1,11 +1,27 @@
 // src/index.ts
-import { ref, computed } from "vue";
-function useComputed(value) {
-  const w = ref(value);
-  return computed(() => {
-    return value.value + 999;
-  });
+import { ref } from "vue";
+function useBoolean(initValue = false) {
+  const bool = ref(initValue);
+  function setBool(value) {
+    bool.value = value;
+  }
+  function setTrue() {
+    setBool(true);
+  }
+  function setFalse() {
+    setBool(false);
+  }
+  function toggle() {
+    setBool(!bool.value);
+  }
+  return {
+    bool,
+    setBool,
+    setTrue,
+    setFalse,
+    toggle
+  };
 }
 export {
-  useComputed
+  useBoolean as default
 };

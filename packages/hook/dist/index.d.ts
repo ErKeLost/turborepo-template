@@ -1,5 +1,11 @@
-import * as vue from 'vue'
+import * as vue from 'vue';
 
-declare function useComputed(value: any): vue.ComputedRef<any>;
+declare function useBoolean(initValue?: boolean): {
+    bool: vue.Ref<boolean>;
+    setBool: (value: boolean) => void;
+    setTrue: () => void;
+    setFalse: () => void;
+    toggle: () => void;
+};
 
-export { useComputed }
+export { useBoolean as default };

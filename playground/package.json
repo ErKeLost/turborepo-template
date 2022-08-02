@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@relaxed/hook": "workspace:1.0.0",
     "@relaxed/utils": "workspace:*",
-    "@relaxed/hook": "workspace:*",
+    "naive-ui": "^2.32.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {

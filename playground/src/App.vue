@@ -3,30 +3,34 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import { Accumulation, Multiplication } from '@relaxed/utils'
-import { useComputed } from '@relaxed/hook'
-import { ref, watch, computed } from 'vue'
-const a = ref(1)
-const res = Accumulation(1, 2, 3, 4, 5)
-const result = Multiplication(1, 2, 3, 4, 5)
-console.log(res)
-const w = useComputed(a)
-console.log(w)
-const e = computed(() => {
-  return a.value + 999
-})
-const r = a.value + 999
-console.log(result)
+import useBoolean from '@relaxed/hook'
+const {
+  bool,
+  setBool,
+  setTrue,
+  setFalse,
+  toggle
+} = useBoolean(false)
+
 </script>
 
 <template>
   <div>
-    {{ w }}
-    {{ e }}
-    {{ r }}
-    <input v-model="a" type="text" />
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
+    <n-tag type="warning">
+      {{ bool }}
+    </n-tag>
+    <n-button type="tertiary" @click="setFalse">
+      false
+    </n-button>
+    <n-button type="primary" @click="setTrue">
+      true
+    </n-button>
+    <n-button type="info" @click="toggle">
+      toogle
+    </n-button>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
