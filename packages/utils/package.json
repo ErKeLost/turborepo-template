@@ -11,9 +11,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "fast-glob": "^3.2.11"
-  },
   "devDependencies": {
     "@relaxed/tsconfig": "workspace:*"
   }

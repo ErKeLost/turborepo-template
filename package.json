@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "postplop": "pnpm i",
+    "build:dev": "turbo run build dev",
+    "build:dev:filter": "turbo run build dev --filter=@relaxed/hook",
     "build": "turbo run build --color",
+    "build:only": "turbo run build --only",
     "build:components": "pnpm build --filter components",
     "build:utils": "pnpm build --filter utils",
     "build:directives": "pnpm build --filter directives",
@@ -48,18 +51,16 @@
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.1.0",
+    "esno": "^0.16.3",
     "fs-extra": "^10.0.1",
     "husky": "^8.0.1",
-    "tsup": "^6.1.3",
-    "esno": "^0.16.3",
     "lint-staged": "^13.0.3",
     "pnpm": "^7.5.2",
     "prettier": "latest",
     "rimraf": "^3.0.2",
+    "tsup": "^6.1.3",
     "turbo": "latest",
-    "typescript": "^4.7.4",
-    "chalk": "^5.0.1",
-    "vitepress": "^1.0.0-alpha.4"
+    "typescript": "^4.7.4"
   },
   "engines": {
     "npm": ">=7.0.0",
@@ -70,5 +71,8 @@
     "commitizen": {
       "path": "node_modules/cz-customizable"
     }
+  },
+  "dependencies": {
+    "fast-glob": "^3.2.11"
   }
 }
