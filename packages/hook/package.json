@@ -12,7 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@relaxed/tsconfig": "workspace:*",
     "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "@relaxed/tsconfig": "workspace:^1.0.0",
+    "@relaxed/utils": "workspace:^1.0.0"
   }
 }
