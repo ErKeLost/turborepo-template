@@ -16,14 +16,13 @@ const { bool, setBool, setTrue, setFalse, toggle } = useBoolean(false)
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
     <div style="margin: 10px 0">
-      <n-tag type="warning">
+      <d-tag type="warning">
         {{ bool }}
-      </n-tag>
+      </d-tag>
     </div>
-    <n-button type="tertiary" @click="setFalse"> false </n-button>
-    <n-button type="primary" @click="setTrue"> true </n-button>
-    <n-button type="info" @click="toggle"> toogle </n-button>
-
+    <d-button type="tertiary" @click="setFalse"> {{ bool }} </d-button>
+    <d-button type="primary" @click="setTrue"> {{ bool }} </d-button>
+    <d-button type="info" @click="toggle"> Toogle </d-button>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
