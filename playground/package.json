@@ -10,14 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@devui-design/icons": "^1.3.0",
     "@relaxed/hook": "workspace:1.0.0",
     "@relaxed/utils": "workspace:*",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-devui": "1.0.0-beta.220801"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
     "vite": "^3.0.3",
-    "naive-ui": "^2.32.1",
     "vue-tsc": "^0.38.4"
   }
 }

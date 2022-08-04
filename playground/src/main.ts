@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
-import Naive from 'naive-ui'
+import DevUI from 'vue-devui'
+import 'vue-devui/style.css'
+import '@devui-design/icons/icomoon/devui-icon.css'
 import './style.css'
 import App from './App.vue'
 
-createApp(App).use(Naive).mount('#app')
+createApp(App).use(DevUI).mount('#app')
