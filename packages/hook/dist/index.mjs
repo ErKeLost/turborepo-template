@@ -25,3 +25,4 @@ function useBoolean(initValue = false) {
 export {
   useBoolean as default
 };
+//# sourceMappingURL=index.mjs.map

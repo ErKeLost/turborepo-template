@@ -1,10 +1,11 @@
-import type { Options } from 'tsup'
+import { defineConfig } from 'tsup'
 
-export default <Options>{
-  entryPoints: ['src/*.ts'],
+export default defineConfig({
+  entry: ['src/index.ts'],
+  target: 'esnext',
+  format: ['esm', 'cjs', 'iife'],
+  splitting: false,
+  sourcemap: true,
   clean: true,
-  format: ['cjs', 'esm'],
-  dts: true
-  // sourcemap: 'inline',
-  // onSuccess: 'npm run build:fix'
-}
+  external: ['vue']
+})

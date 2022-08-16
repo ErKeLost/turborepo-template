@@ -12,5 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@relaxed/tsconfig": "workspace:*"
   }
 }
