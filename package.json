@@ -16,7 +16,7 @@
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "play": "pnpm dev --filter playground",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
