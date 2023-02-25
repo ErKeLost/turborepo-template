@@ -36,7 +36,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "@vueuse/core": "^8.9.2",
-    "bumpp": "^8.2.1",
+    "bumpp": "^9.0.0",
     "commitizen": "^4.2.4",
     "commitlint": "^17.0.3",
     "commitlint-config-cz": "^0.13.3",
