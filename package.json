@@ -12,10 +12,7 @@
     "build:utils": "pnpm build --filter utils",
     "build:directives": "pnpm build --filter directives",
     "build:hooks": "pnpm build --filter hooks",
-    "docs:dev": "vitepress dev docs",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
     "dev": "turbo run dev",
     "play": "pnpm dev --filter playground",
     "lint": "turbo run lint",
@@ -27,12 +24,10 @@
     "commit": "git add . && cz",
     "preinstall": "npx only-allow pnpm",
     "clean": "rimraf node_modules **/*/node_modules",
-    "cs": "changeset",
-    "cs:update": "node ./scripts/changeset.mjs",
-    "cs:version": "changeset version",
-    "cs:tag": "changeset tag",
     "prerelease": "pnpm build",
-    "release": "changeset publish"
+    "prepublishOnly": "npm run build",
+    "release": "bumpp packages/*/package.json && pnpm publish -r"
+
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
