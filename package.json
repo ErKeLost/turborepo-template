@@ -61,7 +61,7 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@7.2.1",
+  "packageManager": "pnpm@7.32.4",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
