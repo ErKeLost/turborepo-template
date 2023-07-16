@@ -52,7 +52,7 @@
     "lint-staged": "^13.2.2",
     "pnpm": "^7.32.4",
     "prettier": "latest",
-    "rimraf": "^3.0.2",
+    "rimraf": "^5.0.0",
     "tsup": "^6.7.0",
     "turbo": "latest",
     "typescript": "^5.0.0"
