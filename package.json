@@ -42,7 +42,7 @@
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.9.2",
-    "esbuild": "^0.14.54",
+    "esbuild": "^0.20.0",
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
