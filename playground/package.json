@@ -14,7 +14,7 @@
     "@relaxed/hook": "workspace:1.0.0",
     "@relaxed/utils": "workspace:*",
     "vue": "^3.2.37",
-    "vue-devui": "1.0.0-beta.220801"
+    "vue-devui": "1.6.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
