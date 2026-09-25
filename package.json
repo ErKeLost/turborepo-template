@@ -32,7 +32,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
     "@commitlint/config-conventional": "^17.6.3",
-    "@types/fs-extra": "^9.0.13",
+    "@types/fs-extra": "^11.0.0",
     "@types/node": "^17.0.45",
     "@typescript-eslint/eslint-plugin": "^5.59.5",
     "@typescript-eslint/parser": "^5.59.5",
@@ -47,7 +47,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "esno": "^0.16.3",
-    "fs-extra": "^10.1.0",
+    "fs-extra": "^11.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "pnpm": "^7.32.4",
